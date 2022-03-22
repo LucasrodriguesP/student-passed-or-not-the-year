@@ -1,5 +1,5 @@
-
 #include <iostream>
+#include <math.h>
 
 
 using namespace std;
@@ -12,7 +12,7 @@ int main()
 {
     
 
-double nota1, nota2, nota3, media;
+double nota1, nota2, nota3, media, resto1, resto2;
 
 
     
@@ -33,18 +33,24 @@ double nota1, nota2, nota3, media;
 
     
        media = (nota3 + nota2 + nota1) / 3;
-    
+       
+       resto1 = media - 6;
+       
+       resto2 = media - 6;
+       
+       resto2 = fabs(resto2);
+
    
  
        if (media >= 6)
        
      
-               cout <<"voce passou com:"<< media;
+               cout <<"voce passou com: "<< media << "\npor exatamente: " << resto1 << "  pontos a mais." ;
 
        
       else 
        
-               cout<<"voce nao passou com:"<< media;
+               cout<<"voce nao passou com:"<< media << "\nfaltando: " << resto2 << " pontos para passar.";
     
   
   
